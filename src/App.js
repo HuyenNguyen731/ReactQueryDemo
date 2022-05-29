@@ -28,6 +28,7 @@ function App() {
             </ul>
           </nav>
           <Routes>
+            <Route path="/rq-dynamic-parallel" element={<ParallelQueriesPage heroIds={[1, 3]}/>} />
             <Route path="/rq-parallel" element={<ParallelQueriesPage />} />
             <Route path="/rq-super-heroes/:heroId" element={<RQSuperHeroPage />} />
             <Route path="/" element={<HomePage />} />
